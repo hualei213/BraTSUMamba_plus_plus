@@ -158,14 +158,9 @@ Finally, `/BraTSUMamba_plus_plus/BraTSUMamba/experiment_planning/plan_and_prepro
 set -e
 
 # ==============================================================================
-# BraTS-UMamba++ nnU-Net v2 training / inference / evaluation script
+# BraTS-UMamba++ training / inference / evaluation script
 # ==============================================================================
 
-cd /mnt/HDLV1/YHR/nnUNet-BraTSUMamba
-
-export PYTHONPATH=/mnt/HDLV1/YHR/nnUNet-BraTSUMamba:$PYTHONPATH
-
-# 避免多线程占用过多资源
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 export OPENBLAS_NUM_THREADS=1
@@ -192,7 +187,7 @@ LABEL_DIR="${RAW_ROOT}/Dataset${TASK_ID}_${DATASET}/labelsTs"
 OUTPUT_ROOT="${RESULTS_ROOT}/Dataset${TASK_ID}_${DATASET}"
 CHECKPOINT_DIR="${OUTPUT_ROOT}/${TRAINER}__${PLANS}__${CONFIG}/fold_${CV}"
 
-# 预测结果保存目录
+
 PRED_ROOT="${OUTPUT_ROOT}/predictions"
 
 # ==============================================================================
