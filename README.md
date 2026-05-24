@@ -2,7 +2,6 @@
 <tr>
 <td align="left">
   <h1 style="margin: 0;">
-    <em>IEEE TMI 2026</em><br>
     BraTS-UMamba++: A Consistency-Driven Framework for Multimodal Brain Tumor Segmentation
   </h1>
 </td>
@@ -20,8 +19,9 @@
   </a>
   <a href="#training">
     <img src="https://img.shields.io/badge/Training-Evaluation-purple.svg" alt="Training and Evaluation">
-  </a>
+  </a
 </p>
+
 <a id="overview"></a>
 
 ## Overview
